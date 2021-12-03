@@ -11,7 +11,7 @@ const Menu = () => {
   return <div className="menu">
       {data.map(item=>
     
-      <MenuItem title={item.title} key={item.id} imageUrl={item.imageUrl} size={item.size} />)}
+      <MenuItem title={item.title} key={item.id} imageUrl={item.imageUrl} size={item.size} linkurl={item.linkUrl} />)}
   </div>;
 };
 
