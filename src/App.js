@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from "react";
 
 import "./App.css";
-import { BrowserRouter, Routes, Route } from "react-router-dom";
+import { BrowserRouter, Routes, Route ,Navigate} from "react-router-dom";
 import { auth, createUserProfileDocument } from "./firebase/firebase-util";
 import { HomePage } from "./pages/homepage/homepage.component";
 import Shop from "./pages/shop/Shop";
@@ -39,15 +39,19 @@ function App(props) {
         <Routes>
           <Route exact path="/" element={<HomePage></HomePage>} />
           <Route path="/shop" element={<Shop />} />
-          <Route path="/signin" element={<SignInAndSignUpPage />} />
+          <Route path="/signin" element={props.currentUser ? <Navigate to='/'/>:  <SignInAndSignUpPage/> } />
         </Routes>
       </BrowserRouter>
     </div>
   );
 }
 
+const mapStatsToProps=({user})=>({
+  currentUser:user.currentUser
+})
+
 const  mapDispatchToProps=dispatch=>({
   setCurrentUser:user=>dispatch(setCurrentUser(user))
 })
 
-export default connect(null,mapDispatchToProps)(App);
+export default connect(mapStatsToProps,mapDispatchToProps)(App);
