@@ -1,22 +1,25 @@
 import React from 'react'
-import PreviewCollection from '../../components/previewCollection/previewComponent';
-import { connect } from 'react-redux';
  
-const Shop = ({data}) => {
+import { Route,Routes } from 'react-router-dom';
+import { connect } from 'react-redux';
+import CollectionOverview from '../../components/collection-overview/collection-overview';
+import Category from '../category/category';
+ 
+const Shop = () => {
+  
 
     return (
         <div className='shop-page'>
-           {
-               data.map((item) => (
-                   <PreviewCollection key={item.id} title={item.title} items={item.items} />
-               ))
-           }
+            <Routes>
+        <Route exact path ={`/`} element={ <CollectionOverview/>}/>
+        <Route path={`/:categoryId`} element={<Category/>}   />
+        </Routes>
         </div>
     )
 }
 
-const mapStateToProps=({collection:{SHOP_DATA}})=>({
-    data:SHOP_DATA
+const mapStateToProps=({shop:{collections}})=>({
+    data:collections
 
 })
 export default connect(mapStateToProps)( Shop);

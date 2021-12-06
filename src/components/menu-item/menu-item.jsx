@@ -4,7 +4,7 @@ import "./menu-item.scss";
 import { useNavigate} from 'react-router'
 const MenuItem = ({title,imageUrl,size,linkurl,addItem}) => {
     let navigate = useNavigate();
-    console.log(imageUrl)
+   
   return (
     <div 
   

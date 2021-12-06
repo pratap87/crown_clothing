@@ -39,7 +39,7 @@ function App(props) {
         <Header  />
         <Routes>
           <Route exact path="/" element={<HomePage></HomePage>} />
-          <Route path="/shop" element={<Shop />} />
+          <Route path="/shop/*" element={<Shop />} />
           <Route exact path="/checkout" element={<Checkout/>} />
           <Route path="/signin" element={props.currentUser ? <Navigate to='/'/>:  <SignInAndSignUpPage/> } />
         </Routes>
