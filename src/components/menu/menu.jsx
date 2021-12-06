@@ -1,18 +1,21 @@
-import React, { useState, useEffect } from "react";
-import sections from "../../directory.data";
-import { HomePage } from "../../pages/homepage/homepage.component";
+import React  from "react";
+ 
 import MenuItem from "../menu-item/menu-item";
 import "./menu.scss";
+import { connect } from "react-redux";
 
-const Menu = () => {
-  const [data, setdata] = useState(sections);
-  console.log(data);
+const Menu = ({sections}) => {
+  
+ 
 
   return <div className="menu">
-      {data.map(item=>
+      {sections.map(item=>
     
       <MenuItem title={item.title} key={item.id} imageUrl={item.imageUrl} size={item.size} linkurl={item.linkUrl} />)}
   </div>;
 };
 
-export default Menu;
+const mapStateToProps=({directory:{sections}})=>({
+sections
+})
+export default connect(mapStateToProps)( Menu);

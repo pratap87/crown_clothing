@@ -1,13 +1,15 @@
 import React from "react";
 import "./shopitem.scss";
-const ShopItem = ({ item }) => {
-  console.log(item);
+import { connect } from "react-redux";
+import { addItem } from "../../redux/cart/cart.action";
+const ShopItem = ({ item,addItem }) => {
+ 
   return (
     <div className="shopitem">
       <div
         style={{ backgroundImage: `url(${item.imageUrl})` }}
         className="image"
-      > <button className="btn">Shop Now</button>
+      > <button className="btn" onClick={()=>addItem(item)}>Shop Now</button>
           </div>
      
       <div className="shop-footer">
@@ -19,4 +21,8 @@ const ShopItem = ({ item }) => {
   );
 };
 
-export default ShopItem;
+const mapDispatchToProps=dispatch=>({
+  addItem:item=>dispatch(addItem(item))
+})
+
+export default connect(null,mapDispatchToProps)(ShopItem);

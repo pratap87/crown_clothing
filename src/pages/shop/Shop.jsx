@@ -1,12 +1,9 @@
-import React,{useState} from 'react'
+import React from 'react'
 import PreviewCollection from '../../components/previewCollection/previewComponent';
+import { connect } from 'react-redux';
  
-import SHOP_DATA from '../../shopData'
-const Shop = () => {
+const Shop = ({data}) => {
 
-    const [data,setdata]=useState(SHOP_DATA);
-    
- 
     return (
         <div className='shop-page'>
            {
@@ -18,4 +15,8 @@ const Shop = () => {
     )
 }
 
-export default Shop
+const mapStateToProps=({collection:{SHOP_DATA}})=>({
+    data:SHOP_DATA
+
+})
+export default connect(mapStateToProps)( Shop);

@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import React, {  useEffect } from "react";
 
 import "./App.css";
 import { BrowserRouter, Routes, Route ,Navigate} from "react-router-dom";
@@ -9,9 +9,10 @@ import {connect } from 'react-redux'
 import Header from "./components/header/header";
 import { setCurrentUser } from "./redux/user/user.action";
 import SignInAndSignUpPage from "./pages/signIn-signUp/sign-in-and-sign-up";
+import Checkout from "./pages/checkout/checkout";
 
 function App(props) {
-  const [User, setUser] = useState(null);
+
 
   useEffect(() => {
     auth.onAuthStateChanged(async (userAuth) => {
@@ -30,7 +31,7 @@ function App(props) {
       }
    
     });
-  }, []);
+  }, [props]);
 
   return (
     <div>
@@ -39,6 +40,7 @@ function App(props) {
         <Routes>
           <Route exact path="/" element={<HomePage></HomePage>} />
           <Route path="/shop" element={<Shop />} />
+          <Route exact path="/checkout" element={<Checkout/>} />
           <Route path="/signin" element={props.currentUser ? <Navigate to='/'/>:  <SignInAndSignUpPage/> } />
         </Routes>
       </BrowserRouter>
