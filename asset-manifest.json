@@ -1,26 +1,26 @@
 {
   "files": {
-    "main.css": "/static/css/main.87808a47.chunk.css",
-    "main.js": "/static/js/main.35abe3c3.chunk.js",
-    "main.js.map": "/static/js/main.35abe3c3.chunk.js.map",
-    "runtime-main.js": "/static/js/runtime-main.c41ee7ab.js",
-    "runtime-main.js.map": "/static/js/runtime-main.c41ee7ab.js.map",
-    "static/js/2.3bb1f05e.chunk.js": "/static/js/2.3bb1f05e.chunk.js",
-    "static/js/2.3bb1f05e.chunk.js.map": "/static/js/2.3bb1f05e.chunk.js.map",
-    "static/js/3.404d34ac.chunk.js": "/static/js/3.404d34ac.chunk.js",
-    "static/js/3.404d34ac.chunk.js.map": "/static/js/3.404d34ac.chunk.js.map",
-    "index.html": "/index.html",
-    "service-worker.js": "/service-worker.js",
-    "service-worker.js.map": "/service-worker.js.map",
-    "static/css/main.87808a47.chunk.css.map": "/static/css/main.87808a47.chunk.css.map",
-    "static/js/2.3bb1f05e.chunk.js.LICENSE.txt": "/static/js/2.3bb1f05e.chunk.js.LICENSE.txt",
-    "static/media/crown.3a4e2b15.svg": "/static/media/crown.3a4e2b15.svg",
-    "static/media/shopping-bag.cfde1dec.svg": "/static/media/shopping-bag.cfde1dec.svg"
+    "main.css": "/crown_clothing/static/css/main.87808a47.chunk.css",
+    "main.js": "/crown_clothing/static/js/main.63614bc1.chunk.js",
+    "main.js.map": "/crown_clothing/static/js/main.63614bc1.chunk.js.map",
+    "runtime-main.js": "/crown_clothing/static/js/runtime-main.adf08164.js",
+    "runtime-main.js.map": "/crown_clothing/static/js/runtime-main.adf08164.js.map",
+    "static/js/2.ff17452d.chunk.js": "/crown_clothing/static/js/2.ff17452d.chunk.js",
+    "static/js/2.ff17452d.chunk.js.map": "/crown_clothing/static/js/2.ff17452d.chunk.js.map",
+    "static/js/3.404d34ac.chunk.js": "/crown_clothing/static/js/3.404d34ac.chunk.js",
+    "static/js/3.404d34ac.chunk.js.map": "/crown_clothing/static/js/3.404d34ac.chunk.js.map",
+    "index.html": "/crown_clothing/index.html",
+    "service-worker.js": "/crown_clothing/service-worker.js",
+    "service-worker.js.map": "/crown_clothing/service-worker.js.map",
+    "static/css/main.87808a47.chunk.css.map": "/crown_clothing/static/css/main.87808a47.chunk.css.map",
+    "static/js/2.ff17452d.chunk.js.LICENSE.txt": "/crown_clothing/static/js/2.ff17452d.chunk.js.LICENSE.txt",
+    "static/media/crown.3a4e2b15.svg": "/crown_clothing/static/media/crown.3a4e2b15.svg",
+    "static/media/shopping-bag.cfde1dec.svg": "/crown_clothing/static/media/shopping-bag.cfde1dec.svg"
   },
   "entrypoints": [
-    "static/js/runtime-main.c41ee7ab.js",
-    "static/js/2.3bb1f05e.chunk.js",
+    "static/js/runtime-main.adf08164.js",
+    "static/js/2.ff17452d.chunk.js",
     "static/css/main.87808a47.chunk.css",
-    "static/js/main.35abe3c3.chunk.js"
+    "static/js/main.63614bc1.chunk.js"
   ]
 }
