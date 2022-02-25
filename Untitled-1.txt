@@ -1,0 +1,100 @@
+
+
+
+1.Router is part of which of the following module?
+
+A)
+@angular/core
+
+B)
+@angular/router
+
+C)
+Both
+
+D)
+None of the above
+
+Ans @angular/router
+
+2 
+What is the decorator used for configuring your module class?
+
+A)
+@NgModule
+
+B)
+@NgApp
+
+C)
+Both
+
+D)
+None of the above
+
+Ans @NgModule
+
+
+
+3
+ Which of the following is an advantage of AngularJS?
+
+AngularJS code is unit testable.
+AngularJS provides reusable components.
+AngularJS uses dependency injection and makes use of separation of concerns.
+All of the above
+Ans d
+
+
+4 filter filter is applied to an expression using pipe character.
+A. true
+B. false
+ans B
+
+5:Which components can be injected as a dependency in AngularJS?
+A. Application Module
+B. constant
+C. value
+D. factory
+Ans:  A
+
+6: Directives can be applied to which all element type?
+A.  Element
+B.  Attribute
+C.  Comment
+D.  All of the above
+Ans: D
+
+7:Angular uses which testing library by default?
+A. Jasmine
+B. Jest
+C  next
+D  mocha 
+
+Ans a
+
+8:Which directive initializes an AngularJS application?
+A ng-init
+B ng-app
+C ngSrc
+D ng-start
+
+Ans B
+
+
+9 :which are directive in angular?
+A:ng-repeat
+B:ng-app
+C:ng-model
+D: all of these
+
+ans d
+
+10 :hooks which are not available in angular?
+
+A:ngOnit()
+B:ngDoCheck()
+C:ngSelector()
+D:ngOnDestory()
+
+Ans c;
