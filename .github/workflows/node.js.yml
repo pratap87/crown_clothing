@@ -16,7 +16,7 @@ jobs:
 
     strategy:
       matrix:
-        node-version: [12.x, 14.x, 16.x]
+        node-version: [ 16.x]
         # See supported Node.js release schedule at https://nodejs.org/en/about/releases/
 
     steps:
@@ -34,7 +34,7 @@ jobs:
     
     -  run: |
         git config --global user.name "pratap87"
-        git config --global user.email "apschauhan60@gmail.com"
+        git config --global user.email " 41077611+pratap87@users.noreply.github.com"
         git remote set-url origin https://${github_token}@github.com/${repository}
         npm run deploy
        env:
