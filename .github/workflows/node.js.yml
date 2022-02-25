@@ -32,6 +32,11 @@ jobs:
     
     - run: npm run build 
     
-    - run:  npm run deploy
+    - run: |
+            git config --global user.name $user_name
+            git config --global user.email $user_email
+            npm run deploy
+    
+
 
   
